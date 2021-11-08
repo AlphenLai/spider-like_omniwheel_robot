@@ -4,7 +4,7 @@
 
 This is a robot inspired by [Tachikoma](https://ghostintheshell.fandom.com/wiki/Tachikoma) from Ghost in the Shell. A robot with wheeled legs which allows it to switch between quadruped mode and vehicle mode.
 
-This project was finished under a lot of compromise, due to inappropriate selection of software and overthinking mechanical design.
+This project was barely finished under a lot of compromise, due to series of inappropriate selection on software development platform and overthinking mechanical design. The robot is only capable in variable wheel angles by moving the position of its legs. Quadruped mode and other planned features are never implemented because of foreseeably  time-consuming efforts needed for completion.
 
 
 
