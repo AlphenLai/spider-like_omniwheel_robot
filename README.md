@@ -24,7 +24,7 @@ MP1584EN DC-DC voltage regulator module (3A)
 
 ### Servo
 
-MG995 servo x4
+MG995 servo (180 degree) x4
 
 > note: 3A power supply is not enough to driver servo against any torque (eg: friction from ground). Continuing driving them will cause system blackout.
 
