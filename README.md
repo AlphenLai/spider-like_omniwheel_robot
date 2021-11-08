@@ -1,8 +1,6 @@
 # spider-like_omniwheel_robot
 
-
-
-![](.\assets\overview.jpg)
+![](./assets/overview.jpg)
 
 This is a robot inspired by [Tachikoma](https://ghostintheshell.fandom.com/wiki/Tachikoma) from Ghost in the Shell. A robot with wheeled legs which allows it to switch between quadruped mode and vehicle mode.
 
@@ -50,7 +48,7 @@ https://github.com/AlphenLai/arduino_nano_usb_host_shield
 
 280rpm, 12V
 
-![](.\assets\motor_wiring.jpg)
+![](./assets/motor_wiring.jpg)
 
 | Colour | definition |
 | ------ | ---------- |
@@ -79,7 +77,7 @@ Considered ease of program in omniwheel mode, and early planned "variable wheel 
 
 ### Wiring
 
-![](.\assets\robot_wiring.jpg)
+![](./assets/robot_wiring.jpg)
 
 
 
@@ -109,5 +107,5 @@ mbed-os. Unfortunately mbed-os is not designed for RTOS. It took a lot of effort
 | usb_interface  | Handles usb interface in serial0/serial_pc. Receiver control signals from USB serial line. |
 
 ## Demo
-[Video demo](.\video_demo\DEMO.md)
+[Video demo](./video_demo/DEMO.md)
 
