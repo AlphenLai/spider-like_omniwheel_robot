@@ -107,5 +107,6 @@ mbed-os. Unfortunately mbed-os is not designed for RTOS. It took a lot of effort
 | usb_interface  | Handles usb interface in serial0/serial_pc. Receiver control signals from USB serial line. |
 
 ## Demo
-[Video demo](./video_demo/DEMO.md)
+
+[![Watch the video](https://img.youtube.com/vi/Zyg-uMiATHM/maxresdefault.jpg)](https://youtu.be/Zyg-uMiATHM)
 
