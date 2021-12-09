@@ -110,47 +110,35 @@ mbed-os. Unfortunately mbed-os is not designed for RTOS. It took a lot of effort
 
 #### Equation to drive a 4 wheels omniwheel robot
 
-$$V_{w} = \begin{bmatrix}
-w_{1}\\ 
-w_{2}\\ 
-w_{3}\\ 
-w_{4}
-\end{bmatrix} = \frac{1}{r}\begin{bmatrix}
--sin(\theta + \alpha _{1}) & cos(\theta + \alpha _{1}) & R\\ 
--sin(\theta + \alpha _{2}) & cos(\theta + \alpha _{2}) & R\\ 
--sin(\theta + \alpha _{3}) & cos(\theta + \alpha _{3}) & R\\ 
--sin(\theta + \alpha _{4}) & cos(\theta + \alpha _{4}) & R
-\end{bmatrix}\begin{bmatrix} 
-V_{x}\\ 
-V_{y}\\ 
-\dot{\theta}
-\end{bmatrix}$$
+![image](./assets/eqn_4wheels.gif)
+
+
 
 where 
 R = radius of robot from body centre to wheel centre
 r = radius of wheel
-$$w$$ = angular velocity of wheel
-$$\theta$$ = body rotation (angle degree)
-$$\alpha$$ = angle of wheel from centre of robot (assume the shaft points to centre of robot)
-$$V_{x}$$ = x axis velocity of robot
-$$V_{y}$$ = y axis velocity of robot
-$$\dot{\theta}$$ = angular velocity of robot (anti-clockwise)
+w = angular velocity of wheel
+theta = body rotation (angle degree)
+alpha = angle of wheel from centre of robot (assume the shaft points to centre of robot)
+Vx = x axis velocity of robot
+Vy = y axis velocity of robot
+dot theta = angular velocity of robot (anti-clockwise)
 
 To convert global frame to local frame (relative to robot body), multiple by the following matrix:
-$$\begin{bmatrix} cos \theta & 0 & 0\\ 0 & cos \theta & 0\\ 0 & 0 & 1 \end{bmatrix}$$
+![image](./assets/eqn_global2local.gif)
 
 Compute the equation above will get the equation for each wheel:
 **global frame**
-$$w_{i} = [sin(\theta+\alpha _{i})V_{x}+cos(\theta+\alpha_{i})V_{y}+R\dot{\theta}]/r$$
+![image](./assets/eqn_eachwheelglobal.gif)
 
 **local frame**
-$$w_{i} = [sin(\theta+\alpha _{i})cos(\theta)V_{x}+cos(\theta+\alpha_{i})cos(\theta)V_{y}+R\dot{\theta}]/r$$
+![image](./assets/eqn_eachwheellocal.gif)
 
 For this robot, motors are ordered by body frame.
 
 But their angles are assigned from 12 o'clock in clockwise due to the ease of following references in early stage.
 
-![image](C:/Users/alvin/Desktop/New folder/assets/coordinate.svg)
+![image](./assets/coordinate.svg)
 
 
 
