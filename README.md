@@ -112,8 +112,6 @@ mbed-os. Unfortunately mbed-os is not designed for RTOS. It took a lot of effort
 
 ![image](./assets/eqn_4wheels.gif)
 
-
-
 where 
 R = radius of robot from body centre to wheel centre
 r = radius of wheel
@@ -125,13 +123,17 @@ Vy = y axis velocity of robot
 dot theta = angular velocity of robot (anti-clockwise)
 
 To convert global frame to local frame (relative to robot body), multiple by the following matrix:
+
 ![image](./assets/eqn_global2local.gif)
 
 Compute the equation above will get the equation for each wheel:
+
 **global frame**
+
 ![image](./assets/eqn_eachwheelglobal.gif)
 
 **local frame**
+
 ![image](./assets/eqn_eachwheellocal.gif)
 
 For this robot, motors are ordered by body frame.
